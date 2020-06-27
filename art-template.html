@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+</body>
+<script src="node_modules/art-template/lib/template-web.js"></script>
+<script type="text/template" id="tpl">
+  hello {{name}}
+</script>
+<script>
+  let ret = template('tpl',{
+    name: 'Jack'
+  })
+
+  console.log(ret);
+</script>
+</html>
